@@ -662,6 +662,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa06c13a93923ef46891f5a4093997cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animalPrefabs:
+  - {fileID: 7355027501404159384, guid: 1dd4b0212f1efb54eb0814fa075a7f2f, type: 3}
+  - {fileID: 1490240791777784933, guid: 659fd89ba6fd5d143a77f5edee6191fe, type: 3}
+  - {fileID: 148042155548166443, guid: 052d06eda7ec1b44eb8da0c2395b387e, type: 3}
 --- !u!4 &993516422
 Transform:
   m_ObjectHideFlags: 0
@@ -833,10 +837,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.005
       objectReference: {fileID: 0}
-    - target: {fileID: 4514197269550338734, guid: 052d06eda7ec1b44eb8da0c2395b387e, type: 3}
-      propertyPath: speed
-      value: 40
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -853,10 +853,6 @@ PrefabInstance:
     - target: {fileID: 1490240791777784933, guid: 659fd89ba6fd5d143a77f5edee6191fe, type: 3}
       propertyPath: m_Name
       value: Animal_Stag_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 7495082938099636287, guid: 659fd89ba6fd5d143a77f5edee6191fe, type: 3}
-      propertyPath: speed
-      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8811415325425591977, guid: 659fd89ba6fd5d143a77f5edee6191fe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -971,10 +967,6 @@ PrefabInstance:
     - target: {fileID: 7355027501404159384, guid: 1dd4b0212f1efb54eb0814fa075a7f2f, type: 3}
       propertyPath: m_Name
       value: Animal_Cow_White
-      objectReference: {fileID: 0}
-    - target: {fileID: 7391041379840719431, guid: 1dd4b0212f1efb54eb0814fa075a7f2f, type: 3}
-      propertyPath: speed
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8422726591651485981, guid: 1dd4b0212f1efb54eb0814fa075a7f2f, type: 3}
       propertyPath: m_LocalPosition.x

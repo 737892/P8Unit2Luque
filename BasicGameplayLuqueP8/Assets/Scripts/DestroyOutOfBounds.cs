@@ -19,7 +19,7 @@ public class DestroyOutOfBounds : MonoBehaviour
     void Update()
        
     {
-        if (transform.position.z < lowerBound)
+        if (transform.position.z > topBound)
         {
             Destroy(gameObject);
 
@@ -29,6 +29,6 @@ public class DestroyOutOfBounds : MonoBehaviour
             Destroy(gameObject);
         }
 
-        }
+    }
        
 }

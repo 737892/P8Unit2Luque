@@ -5,17 +5,20 @@ using UnityEngine;
 public class PlayerControllerX : MonoBehaviour
 {
     public GameObject dogPrefab;
-    public float fireDelay = 20.0f;
+   
+    private float cooldown = 1;
 
     // Update is called once per frame
     void Update()
     {
-        fireDelay -= 0.1f;
+        
         // On spacebar press, send dog
-        if (Input.GetKeyDown(KeyCode.Space)) fireDelay <= 0.0f
+        if (Input.GetKeyDown(KeyCode.Space)  && cooldown <= 0)
         {
             Instantiate(dogPrefab, transform.position, dogPrefab.transform.rotation);
-            fireDelay = 20.0f;
+            cooldown = 1;
         }
+        if (cooldown >= 0) { }
+        cooldown -= Time.deltaTime;
     }
 }
